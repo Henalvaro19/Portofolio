@@ -318,6 +318,36 @@ body {
 .tall {
     grid-row: span 2;
 }
+.sertifikat {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.sertifikat h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.sertifikat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.sertifikat-grid img {
+  width: 250%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sertifikat-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
 
 @media (max-width: 768px) {
     .menu-toggle {
@@ -400,5 +430,12 @@ body {
 
     .about-text p {
         font-size: 0.9rem;
+    }
+    .sertifikat-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .sertifikat-grid img {
+        max-width: 90%;
     }
 } 
