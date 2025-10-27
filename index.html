@@ -29,8 +29,8 @@
             <ul id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#sertifikat">Sertifikat</a></li>
                 <li><a href="#skill">Skill</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
@@ -42,7 +42,7 @@
 
                 <div class="sosmed" data-aos="fade-up">
                     <a href="https://www.instagram.com/pharelcsr?igsh=aWU5cnZ0MTNkdzZn" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/+62 881-0362-31769" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/62881036231769" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://github.com/Henalvaro19" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -65,12 +65,17 @@
         </section>
 
         <section class="sertifikat">
-            <h2 class="fade-up">Sertifikat Saya</h2>
+            <h2 class="fade-up" id="sertifikat">Sertifikat Saya</h2>
             <div class="sertifikat-grid fade-up">
-                <img src="sertifikat/Screenshot 2025-10-24 194458.jpg" alt="Sertifikat 1">
-                <img src="sertifikat/Screenshot 2025-10-24 194533.jpg" alt="Sertifikat 2">
-                <img src="sertifikat/Screenshot_2024-12-04-18-30-18-75_c37d74246d9c81aa0bb824b57eaf7062.jpg" alt="Sertifikat 3">
-                <img src="sertifikat/WhatsApp Image 2025-10-24 at 19.37.56_1d06b375.jpg" alt="Sertifikat 4">
+                <img class="foto fade-up" src="sertifikat/Screenshot 2025-10-24 194458.jpg" alt="Sertifikat 1">
+                <img class="foto fade-up" src="sertifikat/Screenshot 2025-10-24 194533.jpg" alt="Sertifikat 2">
+                <img class="foto fade-up" src="sertifikat/Screenshot_2024-12-04-18-30-18-75_c37d74246d9c81aa0bb824b57eaf7062.jpg" alt="Sertifikat 3">
+                <img class="foto fade-up" src="sertifikat/WhatsApp Image 2025-10-24 at 19.37.56_1d06b375.jpg" alt="Sertifikat 4">
+            </div>
+
+            <div class="popup" id="popup">
+                <span class="close" onclick="tutupPopup()">&times;</span>
+                <img id="popup-img" src="" alt="Popup Image">
             </div>
         </section>
 
@@ -108,6 +113,10 @@
                 </div>
             </div>
         </section>
+
+        <footer class="container fade-up">
+            <p>© 2025 Henalvaro Farrel Bagas Qusuma. All rights reserved.</p>
+        </footer>
     </div>
     
     <script src="script.js"></script>

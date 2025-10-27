@@ -96,6 +96,25 @@ const appearOptions = {
   threshold: 0.2,
 };
 
+const semuafoto = document.querySelectorAll(".foto");
+
+semuafoto.forEach(foto => {
+  foto.addEventListener('click', () => {
+    lihatGambar(foto);
+  });
+});
+
+function lihatGambar(img) {
+  const popup = document.getElementById('popup');
+  const popupImg = document.getElementById('popup-img');
+  popupImg.src = img.src;
+  popup.style.display = 'flex';
+}
+
+function tutupPopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
 const appearOnScroll = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
