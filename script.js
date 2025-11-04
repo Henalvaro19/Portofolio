@@ -6,9 +6,9 @@ toggle.addEventListener("click", () => {
 });
 
 const chars = "!<>-_\\/[]{}—=+*^?#________";
-const textDesktop = "Hai, Saya Henalvaro Farrel Bagas Qusuma";
-const textHi = "Hai,";
-const textNama = "Saya Henalvaro Farrel Bagas Qusuma";
+const textDesktop = "Hi, I'm Henalvaro Farrel Bagas Qusuma";
+const textHi = "Hi,";
+const textNama = "I'm Henalvaro Farrel Bagas Qusuma";
 
 function scramble(text, element) {
   let frame = 0;
