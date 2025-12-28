@@ -3,6 +3,7 @@ const menu = document.getElementById("menu");
 
 toggle.addEventListener("click", () => {
   menu.classList.toggle("show");
+  overlay.classList.toggle("active");
 });
 
 const chars = "!<>-_\\/[]{}—=+*^?#________";

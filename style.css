@@ -436,6 +436,26 @@ body {
   font-weight: 500;
 }
 
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px); /* efek blur */
+  background: rgba(0,0,0,0.2); /* transparansi gelap */
+  opacity: 0;
+  pointer-events: none; /* biar tidak menghalangi klik */
+  transition: opacity 0.3s ease;
+  z-index: 900; /* di bawah menu */
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: auto; /* aktif ketika menu terbuka */
+}
+
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -447,17 +467,33 @@ body {
     .nav ul {
         flex-direction: column;
         background: rgba(0, 0, 0, 0.4);
-        position: absolute;
-        top: 86px;
-        right: 0;
+        position: fixed;
+        top: 93px;
         width: 200px;
-        padding: 35px;
-        display: none;
+        right: 0;
+        height: 100vh;
+        max-height: 90vh;
+        padding: 40px 0;
         text-align: center;
+        display: none;
+        opacity: 0;              /* default tersembunyi */
+        transform: translateX(30px);
    }
 
     .nav ul.show {
+        animation: slideItem 0.6s forwards;
         display: flex;
+    }
+
+    @keyframes slideItem {
+        0% {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
     
     .home {
