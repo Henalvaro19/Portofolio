@@ -127,3 +127,43 @@ const appearOnScroll = new IntersectionObserver(function (entries, observer) {
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
+
+// const slider = document.querySelector(".skill-slider");
+// const prev = document.querySelector(".prev");
+// const next = document.querySelector(".next");
+// const slides = Array.from(document.querySelectorAll(".skill-block"));
+// let currentIndex = 0;
+// const gap = 30;
+
+// function updateSlider() {
+//   const containerWidth = slider.parentElement.offsetWidth;
+//   const slideWidth = slides[0].offsetWidth;
+
+//   // looping circular: gunakan modulo
+//   const index = ((currentIndex % slides.length) + slides.length) % slides.length;
+
+//   // hitung transform supaya slide center
+//   const centerPosition = index * (slideWidth + gap) - (containerWidth / 2 - slideWidth / 2);
+//   slider.style.transform = `translateX(-${centerPosition}px)`;
+
+//   // highlight block tengah
+//   slides.forEach((slide, i) => {
+//     slide.classList.toggle('active', i === index);
+//   });
+// }
+
+// prev.addEventListener("click", () => {
+//   currentIndex--;
+//   updateSlider();
+// });
+
+// next.addEventListener("click", () => {
+//   currentIndex++;
+//   updateSlider();
+// });
+
+// // inisialisasi
+// updateSlider();
+
+// // update saat resize window
+// window.addEventListener('resize', updateSlider);

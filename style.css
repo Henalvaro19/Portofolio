@@ -454,6 +454,77 @@ body {
   opacity: 1;
   pointer-events: auto; /* aktif ketika menu terbuka */
 }
+/* 
+#skills { 
+    padding: 50px; 
+    text-align: center; 
+}
+
+.skill-slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.skill-slider {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+  padding: 0; /* padding kiri-kanan besar agar block pertama bisa di center 
+  box-sizing: content-box;
+}
+
+.skill-block {
+  flex: 0 0 300px;  /* lebar tetap tiap block 
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Highlight block yang di tengah 
+.skill-block.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.skill-block:not(.active) {
+  opacity: 0.6;
+}
+
+/* Tombol navigasi 
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 10;
+}
+.prev:hover, .next:hover { opacity: 1; }
+.prev { left: 5px; }
+.next { right: 5px; }
+
+/* Responsive 
+@media (max-width: 768px) {
+  .skill-slider {
+    padding: 0 20%; /* lebih kecil di mobile 
+  }
+  .skill-block {
+    flex: 0 0 80%;
+  }
+}
+ */
 
 
 @media (max-width: 768px) {
@@ -476,16 +547,15 @@ body {
         padding: 40px 0;
         text-align: center;
         display: none;
-        opacity: 0;              /* default tersembunyi */
-        transform: translateX(30px);
+        /* opacity: 0;
+        /* transform: translateX(30px); */
    }
 
     .nav ul.show {
-        animation: slideItem 0.6s forwards;
         display: flex;
     }
 
-    @keyframes slideItem {
+    /* @keyframes slideItem {
         0% {
             opacity: 0;
             transform: translateX(30px);
@@ -495,7 +565,7 @@ body {
             transform: translateX(0);
         }
     }
-    
+     */
     .home {
         flex-direction: column;
         text-align: center;
